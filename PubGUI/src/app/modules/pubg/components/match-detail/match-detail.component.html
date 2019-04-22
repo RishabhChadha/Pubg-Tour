@@ -1,0 +1,22 @@
+<div class="tournaments-display">
+  <mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Match Detail </mat-card-title>
+      <mat-card-subtitle >{{match?.attributes?.createdAt}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../assets/weopon3.jpg" alt="Photo of a pubg tournament" class="pubg-image">
+    <mat-card-content>
+     <span>GameMode:</span>  {{match?.attributes?.gameMode}} 
+    </mat-card-content>
+    <mat-card-content>
+      <span> Duration:</span> {{match?.attributes?.duration}} 
+    </mat-card-content>
+    <mat-card-content>
+      <span> Map Name:</span> {{match?.attributes?.mapName}}
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color='primary' class="add-button" style="float: right;" (click)="save(match)">Add To Favourite List</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

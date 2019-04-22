@@ -1,0 +1,19 @@
+.ptag{
+    position: absolute;
+    right: 11px;
+}
+
+.mat-drawer-inner-container{
+    background-color: #673ab7;
+}
+.fontcolor{
+color: white;
+}
+
+.footer{
+text-align: center;
+padding: 10px;
+}
+.page-footer{
+    background-color: #673ab7;
+}

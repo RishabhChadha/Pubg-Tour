@@ -1,0 +1,23 @@
+<span style="font-size: 20px; color: violet;">Favourit Matches</span>
+<div class="tournaments-display">
+ 
+  <mat-card class="card" *ngFor="let match of matches">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Match Detail </mat-card-title>
+      <mat-card-subtitle >{{match?.createdAt}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../assets/weopon3.jpg" alt="Photo of a pubg tournament" class="pubg-image">
+    <mat-card-content>
+     <span>GameMode:</span>  {{match?.gameMode}} 
+    </mat-card-content>
+    
+    <mat-card-content>
+      <span> Map Name:</span> {{match?.mapName}}
+    </mat-card-content>
+    <mat-card-actions>
+       <!--  <button mat-raised-button color='primary' style="float: right;" (click)="edit(match)">Edit</button> -->
+      <button mat-raised-button color='primary' style="float: right;" (click)="delete(match)">Delete From Favourite List</button>
+    </mat-card-actions>
+  </mat-card>
+  </div>

@@ -1,0 +1,20 @@
+
+<div class="tournaments-display">
+  <mat-card class="card" *ngFor="let match of matches; let rowIndex=index">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title >Match: {{rowIndex+1}} </mat-card-title>
+      <mat-card-subtitle>{{match?.attributes?.createdAt}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../assets/weopon2.jpeg" alt="Photo of a pubg tournament" class="pubg-image">
+    <mat-card-content>
+      <p>
+      
+      {{match?.id}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color='primary' class="details-button" style="float: right;" (click)="details(match.id)" >Details</button>
+    </mat-card-actions>
+  </mat-card>
+  </div>

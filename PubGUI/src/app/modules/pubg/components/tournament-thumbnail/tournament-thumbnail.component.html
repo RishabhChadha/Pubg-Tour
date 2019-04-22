@@ -1,0 +1,19 @@
+
+<div class="tournaments-display">
+<mat-card class="card" *ngFor="let tournament of tournaments">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title style="margin-left: 0px;">{{tournament?.id}}</mat-card-title>
+    <mat-card-subtitle>{{tournament?.attributes?.createdAt}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="../assets/weopons.jpg" alt="Photo of a pubg tournament" class="pubg-image">
+  <mat-card-content>
+    <p>
+    PubG
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color='primary' class="matches-button" style="float: right;" (click)="Add(tournament.id)" >Matches</button>
+  </mat-card-actions>
+</mat-card>
+</div>
